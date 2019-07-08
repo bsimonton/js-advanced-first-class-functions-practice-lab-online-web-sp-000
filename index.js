@@ -47,17 +47,20 @@ const driversByRevenue = function(drivers){
   };
   
   
-  
-  
+  const totalRevenue = function(drivers){
+    return drivers.reduce(function (total, driver){
+      
+      return total + driver.revenue;
+    });
     
-    const totalRevenue = function (drivers) {
-  return drivers.reduce(function (total, driver ) {
-    return total + driver.revenue;
-  }, 0);
-};
+    
+  };
   
   
   
+  
+  
+   
 
 
 
